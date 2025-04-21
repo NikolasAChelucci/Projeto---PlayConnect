@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - PlayConnect</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/GlobalStyles.css">
+    <link rel="stylesheet" href="../CSS/Projeto.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://store.cloudflare.steamstatic.com/public/css/v6/steam.css">
+    
+    <style>
+        /* Estilo Steam-like */
+        .project-container {
+            margin: 0 auto;
+            padding: 500px;
+            background: url(../images/indie\ games.webp);
+            border-radius: 4px;
+        }
+
+        .section-content {
+            background: rgba(18, 18, 18, 0.8);
+            border-radius: 3px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #FF6A00;
+            transition: all 0.3s ease;
+        }
+
+        .section-content:hover {
+            transform: translateX(10px);
+            box-shadow: 0 0 15px rgba(26, 159, 255, 0.3);
+        }
+
+        .phase-timeline {
+            display: grid;
+            gap: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .phase-timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #1a9fff;
+        }
+
+        .phase-item {
+            position: relative;
+            padding: 15px;
+            background: rgba(31, 31, 31, 0.9);
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .phase-item::before {
+            content: '';
+            position: absolute;
+            left: -23px;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            background: #1a9fff;
+            border-radius: 50%;
+        }
+
+        .phase-item:hover {
+            background: rgba(42, 42, 42, 0.9);
+        }
+
+        .steam-button {
+            background: linear-gradient(90deg, #1a9fff 0%, #006cff 100%);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .steam-button:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 0 10px rgba(26, 159, 255, 0.5);
+        }
+
+        .interactive-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .interactive-list li {
+            padding: 10px;
+            margin: 5px 0;
+            background: rgba(31, 31, 31, 0.9);
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .interactive-list li::before {
+            content: '✓';
+            color: #1a9fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="steam-header">
+        <h1><a href="index.html" alt="página inicial" title="clique aqui para ser direcionado à página principal">PlayConnect</a></h1>
+        <nav class="steam-nav">
+            <ul>
+                <li><a href="index.html" alt="página inicial" title="clique aqui para ser direcionado à página principal">Home</a></li>
+                <li><a href="AboutUs.html" alt="sobre nós" title="clique aqui para ser direcionado à página Sobre Nós">Sobre Nós</a></li>
+                <li><a href="Mercado.html" alt="Mercado" title="clique aqui para ser direcionado à página Mercado">Mercado</a></li>
+                <li><a href="Projeto.html" alt="página Projeto" title="clique aqui para ser direcionado à página Projeto">Projeto</a></li>
+                <li><a href="form.html" alt="página Contato" title="clique aqui para ser direcionado à página Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-container">
+        <section class="section-content">
+            <div class="steam-header-section">
+                <h2>VISÃO GERAL DO PROJETO</h2>
+                <button class="steam-button">DOCUMENTAÇÃO COMPLETA</button>
+            </div>
+            <p class="steam-text">Conectando criadores e influenciadores na nova era dos jogos independentes</p>
+        </section>
+
+        <section class="section-content">
+            <h2>RECURSOS PRINCIPAIS</h2>
+            <ul class="interactive-list">
+                <li>Catálogo dinâmico de jogos independentes</li>
+                <li>Sistema de matchmaking entre desenvolvedores e streamers</li>
+                <li>Dashboard analítico em tempo real</li>
+                <li>Sistema de avaliação integrado</li>
+                <li>API pública para integrações</li>
+            </ul>
+        </section>
+
+        <section class="section-content">
+            <h2>ROADMAP DE IMPLEMENTAÇÃO</h2>
+            <div class="phase-timeline">
+                <div class="phase-item">
+                    <h3>FASE 1: CONCEPÇÃO (Q3 2024)</h3>
+                    <div class="phase-details">
+                        <p>Definição da arquitetura principal e design do sistema</p>
+                        <div class="progress-bar" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="phase-item">
+                    <h3>FASE 2: DESENVOLVIMENTO (Q4 2024)</h3>
+                    <div class="phase-details">
+                        <p>Implementação do core da plataforma</p>
+                        <div class="progress-bar" data-progress="65"></div>
+                    </div>
+                </div>
+                <div class="phase-item">
+                    <h3>FASE 3: LANÇAMENTO (Q1 2025)</h3>
+                    <div class="phase-details">
+                        <p>Release inicial para parceiros selecionados</p>
+                        <div class="progress-bar" data-progress="15"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demais seções mantidas com estrutura similar -->
+    </main>
+
+    <footer class="steam-footer">
+        <p>© 2025 PlayConnect. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Progress bars animation
+        document.querySelectorAll('.progress-bar').forEach(bar => {
+            const progress = bar.dataset.progress;
+            bar.style.width = '0';
+            setTimeout(() => {
+                bar.style.width = `${progress}%`;
+                bar.style.transition = 'width 1s ease';
+            }, 500);
+        });
+
+        // Interactive phase items
+        document.querySelectorAll('.phase-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const details = item.querySelector('.phase-details');
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+
+        // Dynamic header shadow
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.steam-header');
+            header.style.boxShadow = window.scrollY > 0 ? 
+                '0 0 15px rgba(26, 159, 255, 0.3)' : 
+                'none';
+        });
+
+        // Tooltip system
+        document.querySelectorAll('[data-tooltip]').forEach(element => {
+            const tooltip = document.createElement('div');
+            tooltip.className = 'steam-tooltip';
+            tooltip.textContent = element.dataset.tooltip;
+            document.body.appendChild(tooltip);
+
+            element.addEventListener('mouseover', (e) => {
+                const rect = e.target.getBoundingClientRect();
+                tooltip.style.left = `${rect.left}px`;
+                tooltip.style.top = `${rect.bottom + 5}px`;
+                tooltip.style.opacity = '1';
+            });
+
+            element.addEventListener('mouseout', () => {
+                tooltip.style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+</html>
