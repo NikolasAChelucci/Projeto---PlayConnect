@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PlayConnect</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <link rel="stylesheet" href="../CSS/GlobalStyles.css">
-    <link rel="stylesheet" href="../CSS/Mercado.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1><a href="index.html" alt="página inicial" title="clique aqui para ser direcionado à página principal">PlayConnect</a></h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" alt="página inicial" title="clique aqui para ser direcionado à página principal">Home</a></li>
-          <li><a href="AboutUs.html" alt="sobre nós" title="clique aqui para ser direcionado à página Sobre Nós">Sobre nós</a></li> 
-          <li><a href="Mercado.html" alt="Mercado" title="clique aqui para ser direcionado à página Mercado">Mercado</a></li>
-          <li><a href="Projeto.html" alt="página Projeto" title="clique aqui para ser direcionado à página Projeto">Projeto</a></li>
-          <li><a href="form.html" alt="página Contato" title="clique aqui para ser direcionado à página Contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayConnect</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <link rel="stylesheet" href="../CSS/GlobalStyles.css">
+  <link rel="stylesheet" href="../CSS/Mercado.css">
 
-    <main>
-      <section class="pesquisa-container">
-        <div class="pesquisa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html" alt="página inicial"
+        title="clique aqui para ser direcionado à página principal">PlayConnect</a></h1>
+
+    <!-- Switcher Dark/Light -->
+    <div class="form-check form-switch d-flex align-items-center gap-2">
+      <input class="form-check-input" type="checkbox" id="themeToggle" title="Alternar tema claro/escuro" />
+      <label class="form-check-label" for="themeToggle">
+        <span id="themeIcon">🌞</span>
+      </label>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" alt="página inicial"
+            title="clique aqui para ser direcionado à página principal">Home</a></li>
+        <li><a href="AboutUs.html" alt="sobre nós" title="clique aqui para ser direcionado à página Sobre Nós">Sobre
+            nós</a></li>
+        <li><a href="Mercado.html" alt="Mercado" title="clique aqui para ser direcionado à página Mercado">Mercado</a>
+        </li>
+        <li><a href="Projeto.html" alt="página Projeto"
+            title="clique aqui para ser direcionado à página Projeto">Projeto</a></li>
+        <li><a href="form.html" alt="página Contato"
+            title="clique aqui para ser direcionado à página Contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pesquisa-container">
+      <div class="pesquisa">
         <h2>O Mercado de Jogos Independentes no Brasil</h2>
         <p>
           O mercado de jogos independentes no Brasil tem mostrado um crescimento
@@ -62,8 +80,8 @@
       <div class="pesquisa">
         <h2>Jogos Brasileiros que se Destacam</h2>
         <div class="pesquisa-img">
-        <img src="../images/dandara.jpg" alt="Dandara">
-        <img src="../images/pocket.jpg" alt="Pocket Bravery">
+          <img src="../images/dandara.jpg" alt="Dandara">
+          <img src="../images/pocket.jpg" alt="Pocket Bravery">
         </div>
         <p>
           Alguns jogos brasileiros conseguiram se destacar no mercado
@@ -180,102 +198,19 @@
           mercado global.
         </p>
       </div>
-      </section>
+    </section>
 
-    </main>
+  </main>
 
-    <footer>
-      <p>© 2025 PlayConnect | Conectando criadores e jogadores</p>
-    </footer>
-    <script>
-      // ===== CARROSSEL DE JOGOS BRASILEIROS =====
-      const jogosBrasileiros = [
-        {
-          nome: "Dandara",
-          imagem: "../images/dandara.jpg",
-          descricao: "Metroidvania inspirado na heroína quilombola Dandara dos Palmares",
-          preco: 29.99,
-          tags: ["Plataforma", "Aventura"]
-        },
-        {
-          nome: "Pocket Bravery",
-          imagem: "../images/pocket.jpg", 
-          descricao: "Jogo de luta em pixel art com personagens brasileiros",
-          preco: 39.99,
-          tags: ["Luta", "Retrô"]
-        },
-        {
-          nome: "Horizon Chase Turbo",
-          imagem: "../images/horizonchase.jpg",
-          descricao: "Corrida arcade inspirada nos clássicos dos anos 90",
-          preco: 36.99,
-          tags: ["Corrida", "Arcade"]
-        }
-      ];
-    
-      const carrosselContainer = document.createElement('div');
-      carrosselContainer.className = 'carrossel-container';
-      document.querySelector('.pesquisa-img').replaceWith(carrosselContainer);
-    
-      // Botões de navegação
-      carrosselContainer.innerHTML = `
-        <button class="carrossel-btn prev" title = "clique aqui para voltar o carrossel">❮</button>
-        <div class="carrossel"></div>
-        <button class="carrossel-btn next" title = "clique aqui para avançar o carrossel">❯</button>
-      `;
-    
-      const carrossel = carrosselContainer.querySelector('.carrossel');
-      let currentIndex = 0;
-    
-      function renderCarrossel() {
-        carrossel.innerHTML = `
-          <div class="jogo-card">
-            <img src="${jogosBrasileiros[currentIndex].imagem}" alt="${jogosBrasileiros[currentIndex].nome}">
-            <h3>${jogosBrasileiros[currentIndex].nome}</h3>
-            <p>${jogosBrasileiros[currentIndex].descricao}</p>
-            <span class="preco">R$ ${jogosBrasileiros[currentIndex].preco.toFixed(2)}</span>
-            <div class="tags">${jogosBrasileiros[currentIndex].tags.map(tag => `<span>${tag}</span>`).join('')}</div>
-          </div>
-        `;
-      }
-    
-      carrosselContainer.querySelector('.next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % jogosBrasileiros.length;
-        renderCarrossel();
-      });
-    
-      carrosselContainer.querySelector('.prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + jogosBrasileiros.length) % jogosBrasileiros.length;
-        renderCarrossel();
-      });
-    
-      renderCarrossel();
-    
-      // ===== FILTRO DE CATEGORIAS =====
-      const categorias = ["Todos", "Plataforma", "Luta", "Aventura", "Corrida"];
-      const filtroContainer = document.createElement('div');
-      filtroContainer.className = 'filtro-categorias';
-      filtroContainer.innerHTML = `
-        <h3>Filtrar por categoria:</h3>
-        <div class="categorias">
-          ${categorias.map(cat => `<button class="categoria-btn">${cat}</button>`).join('')}
-        </div>
-      `;
-      document.querySelector('.pesquisa').prepend(filtroContainer);
-    
-      // ===== EFEITOS DE HOVER =====
-      document.querySelectorAll('.pesquisa').forEach(section => {
-        section.addEventListener('mouseenter', () => {
-          section.style.transform = 'scale(1.02)';
-          section.style.boxShadow = '0 5px 15px rgba(255, 106, 0, 0.3)';
-        });
-        
-        section.addEventListener('mouseleave', () => {
-          section.style.transform = '';
-          section.style.boxShadow = '';
-        });
-      });
-    </script>
-  </body>
-  
+  <footer>
+    <p>© 2025 PlayConnect | Conectando criadores e jogadores</p>
+  </footer>
+
+  //<!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../JS/Mercado.js"></script>
+
+</body>
+
 </html>
