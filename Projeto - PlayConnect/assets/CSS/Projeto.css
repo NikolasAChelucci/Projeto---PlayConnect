@@ -1,4 +1,4 @@
-.section-container{
+.section-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -6,7 +6,7 @@
     padding: 50px 20px;
 }
 
-.section-content{
+.section-content {
     background: var(--color-card);
     padding: 30px;
     border-radius: 12px;
@@ -21,21 +21,29 @@
     max-width: 1200px;
     color: var(--color-text);
 }
-.section-content:hover{
+
+.section-content:hover {
     transform: scale(1.02);
     box-shadow: 0px 0px 20px var(--color-primary);
 }
 
-.section-content{
+.section-content {
     animation: fadeInUp 1s ease-in-out;
 }
 
-@keyframes fadeInUp{
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.section-content h2{
+.section-content h2 {
     font-size: var(--font-size-title);
     color: var(--color-primary);
     text-align: center;
@@ -48,11 +56,16 @@
 }
 
 @keyframes glowText {
-    from { text-shadow: 0px 0px 5px var(--color-primary); }
-    to { text-shadow: 0px 0px 15px var(--color-secondary); }
+    from {
+        text-shadow: 0px 0px 5px var(--color-primary);
+    }
+
+    to {
+        text-shadow: 0px 0px 15px var(--color-secondary);
+    }
 }
 
-.section-content h3{
+.section-content h3 {
     font-size: var(--font-size-subtitle);
     color: var(--color-secondary);
     background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
@@ -61,12 +74,127 @@
     animation: glowText 2s infinite alternate;
 }
 
-.section-content ul{
+.section-content ul {
     list-style: none;
     padding-left: 0;
 }
 
-.section-content ul li{
+.section-content ul li {
     padding: 8px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo Steam-like */
+.project-container {
+    margin: 0 auto;
+    padding: 500px;
+    background: url(../images/indie\ games.webp);
+    border-radius: 4px;
+}
+
+.section-content {
+    background: rgba(18, 18, 18, 0.8);
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #FF6A00;
+    transition: all 0.3s ease;
+}
+
+.section-content:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 15px rgba(26, 159, 255, 0.3);
+}
+
+.phase-timeline {
+    display: grid;
+    gap: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.phase-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #1a9fff;
+}
+
+.phase-item {
+    position: relative;
+    padding: 15px;
+    background: rgba(31, 31, 31, 0.9);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.phase-item::before {
+    content: '';
+    position: absolute;
+    left: -23px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background: #1a9fff;
+    border-radius: 50%;
+}
+
+.phase-item:hover {
+    background: rgba(42, 42, 42, 0.9);
+}
+
+.steam-button {
+    background: linear-gradient(90deg, #1a9fff 0%, #006cff 100%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.steam-button:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 10px rgba(26, 159, 255, 0.5);
+}
+
+.interactive-list {
+    list-style: none;
+    padding: 0;
+}
+
+.interactive-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(31, 31, 31, 0.9);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.interactive-list li::before {
+    content: '✓';
+    color: #1a9fff;
+    font-weight: bold;
+}
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode a {
+    color: #F34795;
+}
+
+.dark-mode .navbar,
+.dark-mode header,
+.dark-mode footer {
+    background-color: #ffffff !important;
 }
