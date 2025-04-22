@@ -1,122 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - PlayConnect</title>
+
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/GlobalStyles.css">
     <link rel="stylesheet" href="../CSS/SobreNos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
-    
-    <style>
-        /* Estilos melhorados */
-        .missao-visao {
-            background: rgba(31, 31, 31, 0.7);
-            border-radius: 15px;
-            padding: 30px;
-            margin: 40px 0;
-            border-left: 5px solid var(--color-primary);
-        }
-        
-        .missao-visao h2 {
-            color: var(--color-primary);
-            margin-bottom: 20px;
-        }
-        
-        .missao-visao-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-        
-        @media (max-width: 768px) {
-            .missao-visao-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
 
-        .equipe-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            padding: 20px;
-        }
-
-        .card {
-            background: rgba(31, 31, 31, 0.9);
-            border-radius: 15px;
-            padding: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.5s forwards;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .card:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 8px 20px rgba(255, 106, 0, 0.2);
-        }
-
-        .tabs {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .tab-btn {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 25px;
-            background: var(--color-card);
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-
-        .tab-btn.active {
-            background: var(--color-primary);
-            transform: scale(1.05);
-        }
-
-        .membro-antigo {
-            opacity: 0.8;
-            position: relative;
-        }
-
-        .membro-antigo::after {
-            content: "Membro Antigo";
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: var(--color-secondary);
-            color: white;
-            padding: 3px 8px;
-            border-radius: 10px;
-            font-size: 0.7em;
-        }
-    </style>
 </head>
+
 <body>
     <header>
-        <h1><a href="index.html" alt="página inicial" title="clique aqui para ser direcionado à página principal">PlayConnect</a></h1>
+        <h1><a href="index.html" alt="página inicial"
+                title="clique aqui para ser direcionado à página principal">PlayConnect</a></h1>
         <nav>
             <ul>
-                <li><a href="index.html" alt="página inicial" title="clique aqui para ser direcionado à página principal">Home</a></li>
-                <li><a href="AboutUs.html" alt="sobre nós" title="clique aqui para ser direcionado à página Sobre Nós">Sobre nós</a></li>
-                <li><a href="Mercado.html" alt="Mercado" title="clique aqui para ser direcionado à página Mercado">Mercado</a></li>
-                <li><a href="Projeto.html" alt="página Projeto" title="clique aqui para ser direcionado à página Projeto">Projeto</a></li>
-                <li><a href="form.html" alt="página Contato" title="clique aqui para ser direcionado à página Contato">Contato</a></li>
+                <li><a href="index.html" alt="página inicial"
+                        title="clique aqui para ser direcionado à página principal">Home</a></li>
+                <li><a href="AboutUs.html" alt="sobre nós"
+                        title="clique aqui para ser direcionado à página Sobre Nós">Sobre nós</a></li>
+                <li><a href="Mercado.html" alt="Mercado"
+                        title="clique aqui para ser direcionado à página Mercado">Mercado</a></li>
+                <li><a href="Projeto.html" alt="página Projeto"
+                        title="clique aqui para ser direcionado à página Projeto">Projeto</a></li>
+                <li><a href="form.html" alt="página Contato"
+                        title="clique aqui para ser direcionado à página Contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -124,34 +37,41 @@
     <main>
         <section class="SobreNos">
             <h1>Um pouco sobre nós</h1>
-            
+
             <div class="missao-visao">
-                <p>A PlayConnect nasceu da paixão por jogos e da percepção de uma lacuna no mercado: a dificuldade que desenvolvedores independentes enfrentam para ganhar visibilidade, enquanto streamers buscam constantemente por novos conteúdos para suas audiências.</p>
-                
-                <p>Nossa plataforma foi concebida como uma ponte inteligente entre esses dois universos, criando um ecossistema onde:</p>
-                
+                <p>A PlayConnect nasceu da paixão por jogos e da percepção de uma lacuna no mercado: a dificuldade que
+                    desenvolvedores independentes enfrentam para ganhar visibilidade, enquanto streamers buscam
+                    constantemente por novos conteúdos para suas audiências.</p>
+
+                <p>Nossa plataforma foi concebida como uma ponte inteligente entre esses dois universos, criando um
+                    ecossistema onde:</p>
+
                 <ul>
                     <li>Desenvolvedores encontram exposição para seus jogos</li>
                     <li>Streamers descobrem títulos exclusivos</li>
                     <li>Jogadores acessam experiências únicas</li>
                 </ul>
-                
+
                 <div class="missao-visao-grid">
                     <div>
                         <h2>Nossa Missão</h2>
-                        <p>Democratizar o acesso ao mercado de games, proporcionando ferramentas que impulsionem desenvolvedores independentes e criadores de conteúdo, enriquecendo toda a comunidade gamer.</p>
+                        <p>Democratizar o acesso ao mercado de games, proporcionando ferramentas que impulsionem
+                            desenvolvedores independentes e criadores de conteúdo, enriquecendo toda a comunidade gamer.
+                        </p>
                     </div>
-                    
+
                     <div>
                         <h2>Nossa Visão</h2>
-                        <p>Ser a principal plataforma de conexão entre desenvolvedores e influenciadores na América Latina até 2027, reconhecida por fomentar a inovação e diversidade no cenário de jogos independentes.</p>
+                        <p>Ser a principal plataforma de conexão entre desenvolvedores e influenciadores na América
+                            Latina até 2027, reconhecida por fomentar a inovação e diversidade no cenário de jogos
+                            independentes.</p>
                     </div>
                 </div>
             </div>
 
             <h2>Conheça Nossa Equipe</h2>
             <p class="equipe-desc">Somos um time multidisciplinar unido pela paixão por games e tecnologia:</p>
-            
+
             <div class="tabs">
                 <button class="tab-btn active" data-tab="atual">Membros Atuais</button>
                 <button class="tab-btn" data-tab="antigo">Membros Antigos</button>
@@ -220,62 +140,8 @@
         <p>© 2025 PlayConnect | Conectando criadores e jogadores</p>
     </footer>
 
-    <script>
-        // Sistema de Tabs melhorado
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabs = document.querySelectorAll('.tab-btn');
-            const sections = {
-                atual: document.getElementById('atual'),
-                antigo: document.getElementById('antigo')
-            };
+    <script src="../JS/AboutUs.js"></script>
 
-            // Função para alternar abas
-            function switchTab(tabId) {
-                // Atualiza estado dos botões
-                tabs.forEach(tab => {
-                    tab.classList.toggle('active', tab.dataset.tab === tabId);
-                });
-                
-                // Alterna visibilidade das seções
-                for (const [key, section] of Object.entries(sections)) {
-                    section.style.display = key === tabId ? 'grid' : 'none';
-                    
-                    // Dispara animações ao mostrar
-                    if (key === tabId) {
-                        const cards = section.querySelectorAll('.card');
-                        cards.forEach((card, index) => {
-                            card.style.animationDelay = `${index * 0.1}s`;
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(20px)';
-                            setTimeout(() => {
-                                card.style.animation = 'fadeInUp 0.5s forwards';
-                            }, 50);
-                        });
-                    }
-                }
-            }
-
-            // Event listeners para as tabs
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => switchTab(tab.dataset.tab));
-            });
-
-            // Efeitos de hover dinâmicos
-            document.querySelectorAll('.card').forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    card.style.transform = 'translateY(-7px) scale(1.02)';
-                    card.style.boxShadow = '0 12px 25px rgba(255, 106, 0, 0.3)';
-                });
-                
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = 'translateY(0) scale(1)';
-                    card.style.boxShadow = '0 5px 15px rgba(255, 106, 0, 0.1)';
-                });
-            });
-
-            // Inicializa com a primeira tab ativa
-            switchTab('atual');
-        });
-    </script>
 </body>
+
 </html>
