@@ -5,7 +5,7 @@
     --font-size-subtitle: 20px;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    
+
     --color-primary: #ff6a00;
     --color-secondary: #ee0979;
     --color-text: #ffffff;
@@ -98,7 +98,8 @@ footer p {
 }
 
 /* Listas */
-ol, ul {
+ol,
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -143,7 +144,7 @@ ol, ul {
         padding: 15px;
         background-size: contain;
     }
-    
+
     header {
         flex-direction: column;
         text-align: center;
