@@ -53,3 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializa com a primeira tab ativa
     switchTab('atual');
 });
+
+// Inicializa o VLibras
+new window.VLibras.Widget('https://vlibras.gov.br/app');
