@@ -23,3 +23,6 @@ toggle.addEventListener("change", () => {
     const newTheme = toggle.checked ? "dark" : "light";
     setTheme(newTheme);
 });
+
+// Inicializa o VLibras
+new window.VLibras.Widget('https://vlibras.gov.br/app');
