@@ -58,20 +58,20 @@ carrosselContainer.innerHTML = `
         <button class="carrossel-btn prev" title = "clique aqui para voltar o carrossel">❮</button>
         <div class="carrossel"></div>
         <button class="carrossel-btn next" title = "clique aqui para avançar o carrossel">❯</button>
-      `;
+    `;
 
 const carrossel = carrosselContainer.querySelector('.carrossel');
 let currentIndex = 0;
 
 function renderCarrossel() {
     carrossel.innerHTML = `
-          <div class="jogo-card">
+        <div class="jogo-card">
             <img src="${jogosBrasileiros[currentIndex].imagem}" alt="${jogosBrasileiros[currentIndex].nome}">
             <h3>${jogosBrasileiros[currentIndex].nome}</h3>
             <p>${jogosBrasileiros[currentIndex].descricao}</p>
             <span class="preco">R$ ${jogosBrasileiros[currentIndex].preco.toFixed(2)}</span>
             <div class="tags">${jogosBrasileiros[currentIndex].tags.map(tag => `<span>${tag}</span>`).join('')}</div>
-          </div>
+        </div>
         `;
 }
 
@@ -94,9 +94,9 @@ filtroContainer.className = 'filtro-categorias';
 filtroContainer.innerHTML = `
         <h3>Filtrar por categoria:</h3>
         <div class="categorias">
-          ${categorias.map(cat => `<button class="categoria-btn">${cat}</button>`).join('')}
+        ${categorias.map(cat => `<button class="categoria-btn">${cat}</button>`).join('')}
         </div>
-      `;
+    `;
 document.querySelector('.pesquisa').prepend(filtroContainer);
 
 // ===== EFEITOS DE HOVER =====
@@ -111,3 +111,6 @@ document.querySelectorAll('.pesquisa').forEach(section => {
         section.style.boxShadow = '';
     });
 });
+
+// Inicializa o VLibras
+new window.VLibras.Widget('https://vlibras.gov.br/app');
