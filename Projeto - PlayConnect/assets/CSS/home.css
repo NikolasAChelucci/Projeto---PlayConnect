@@ -51,6 +51,18 @@
     animation: glowText 2s infinite alternate;
 }
 
+.welcome p {
+    font-size: 18px;
+}
+
+.welcome ol {
+    font-size: 18px;
+}
+
+.welcome ul {
+    font-size: 18px;
+}
+
 @keyframes glowText {
     from {
         text-shadow: 0px 0px 5px var(--color-primary);
