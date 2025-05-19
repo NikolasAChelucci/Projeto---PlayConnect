@@ -12,10 +12,22 @@
         margin-bottom: 20px;
     }
 
+    .missao-visao p {
+        font-size: 18px;
+    }
+
+    .missao-visao ul {
+        font-size: 18px;
+    }
+
     .missao-visao-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+    }
+
+    .missao-visao-grid {
+    text-align: center;
     }
 
     @media (max-width: 768px) {
