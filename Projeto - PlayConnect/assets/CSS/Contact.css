@@ -14,7 +14,7 @@
 }
 
 .contato p {
-    font-size: var(--font-size-base, 16px);
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
