@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
   <title>PlayConnect</title>
 
   <!-- Bootstrap CSS -->
@@ -31,6 +32,21 @@
         <span id="themeIcon">🌞</span>
       </label>
     </div>
+
+    <!-- Estrutura do VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <!-- Script principal VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <!-- (onde está o new VLibras.Widget) -->
+    <script src="../JS/index.js"></script>
+
 
     <nav>
       <ul>
@@ -69,7 +85,7 @@
         </p>
         <ol>
           <li>
-            <strong>Desenvolvedore</strong>: Criam um perfil e cadastram seus
+            <strong>Desenvolvedores</strong>: Criam um perfil e cadastram seus
             jogos na plataforma.
           </li>
           <li>
