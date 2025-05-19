@@ -68,3 +68,6 @@ document.querySelectorAll('[data-tooltip]').forEach(element => {
         tooltip.style.opacity = '0';
     });
 });
+
+// Inicializa o VLibras
+new window.VLibras.Widget('https://vlibras.gov.br/app');
