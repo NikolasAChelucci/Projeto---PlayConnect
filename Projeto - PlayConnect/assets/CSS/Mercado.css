@@ -67,7 +67,7 @@
 }
 
 .pesquisa p {
-    font-size: var(--font-size-base);
+    font-size: 18px;
     font-weight: var(--font-weight-normal);
     line-height: 1.8;
     text-align: justify;
@@ -75,8 +75,9 @@
 }
 
 .pesquisa img {
-    width: 500px;
-    height: 500px;
+    width: 70%;
+    border-radius: 1%;
+    margin-top: 1%;
 }
 
 .pesquisa:hover::before {
