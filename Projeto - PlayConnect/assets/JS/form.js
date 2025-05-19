@@ -25,9 +25,6 @@ toggle.addEventListener("change", () => {
 });
 
 
-
-
-
 const formulario = document.getElementById('formularioContato');
 const nomeInput = document.getElementById('nome');
 const emailInput = document.getElementById('email');
@@ -82,3 +79,6 @@ formulario.addEventListener('submit', function (event) {
         event.preventDefault();
     }
 });
+
+// Inicializa o VLibras
+new window.VLibras.Widget('https://vlibras.gov.br/app');
